@@ -411,7 +411,7 @@ def scrape_stats():
     event_links_txt = 'event_links.txt'
     save_dir = join(stat_dir, 'All_Events/')
     if not exists(save_dir):
-        makedirs(stat_dir)
+        makedirs(save_dir)
 
     event_links = get_ufcstats_event_links()
     # pop the upcoming event from list.
